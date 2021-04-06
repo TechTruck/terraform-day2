@@ -5,7 +5,7 @@ resource "aws_instance" "myec2" {
   instance_type = "t2.micro"
   tags = {
     # "Name" = "Shweta-Terraform.${count.index + 1}"
-    "Name" =  "Shweta-Terraform-${var.tags[count.index]}"
+    "Name" = "Shweta-Terraform-${var.tags[count.index]}"
   }
 }
 
